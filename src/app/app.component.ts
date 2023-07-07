@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   nombre: string = 'Mario Eduardo';
+  nombre2: string = 'NanCY maYeK';
   arreglo: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   PI: number = Math.PI;
   porcentaje: number = 0.234;

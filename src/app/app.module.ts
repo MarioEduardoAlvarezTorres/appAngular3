@@ -9,9 +9,10 @@ registerLocaleData(localeEs);
 registerLocaleData(localeZh);
 
 import { AppComponent } from './app.component';
+import { CapitalizadoPipe } from './pipes/capitalizado.pipe';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, CapitalizadoPipe],
   imports: [BrowserModule],
   providers: [
     {
