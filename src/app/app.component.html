@@ -97,6 +97,24 @@
           <td>date:'MMMM-d'</td>
           <td>{{ fecha | date : "MMMM-dd" }}</td>
         </tr>
+
+        <tr>
+          <td>{{ fecha }}</td>
+          <td>
+            date : "MMMM-dd":'{{ idioma }}'
+            <br />
+            <button (click)="changeLg('es')" class="btn btn-primary m-1">
+              Espanol
+            </button>
+            <button (click)="changeLg('en')" class="btn btn-secondary m-1">
+              English
+            </button>
+            <button (click)="changeLg('zh')" class="btn btn-success m-1">
+              Chinese
+            </button>
+          </td>
+          <td>{{ fecha | date : "MMMM-dd" : "" : idioma }}</td>
+        </tr>
       </tbody>
     </table>
     <h3>JSON</h3>
