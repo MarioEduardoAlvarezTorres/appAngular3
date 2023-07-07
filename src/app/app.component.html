@@ -7,7 +7,7 @@
       <thead class="table-dark">
         <tr>
           <th>Varible</th>
-          <th>Pipe</th>
+          <th>Pipes in Angular</th>
           <th>Salida</th>
         </tr>
       </thead>
@@ -128,6 +128,19 @@
       <div class="col">
         <pre>{{ heroe | json }}</pre>
       </div>
+    </div>
+  </div>
+  <div class="row mb-5">
+    <div class="col">
+      <iframe
+        width="560"
+        height="315"
+        [src]="videoUrl | domseguro"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      >
+      </iframe>
     </div>
   </div>
 </div>
